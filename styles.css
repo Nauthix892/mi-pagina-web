@@ -1,0 +1,92 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: 'Orbitron', sans-serif; /* Fuente del texto principal */
+    margin: 0; /* Elimina el margen exterior */
+    padding: 0; /* Elimina el relleno interior */
+    background-color: #f9f9f9; /* Color de fondo del cuerpo */
+    background-image: url('imagen1.jpg'); /* Ruta de la imagen de fondo inicial */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    transition: background-image 1s ease-in-out; /* Transición suave de la imagen de fondo */
+    color: #333; /* Color del texto principal */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 1rem 0; /* Espaciado interno superior e inferior de 1rem */
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 2rem; /* Espaciado interno de 2rem */
+    color: #333; /* Color del texto en el contenido principal */
+}
+
+/* Estilos del formulario y elementos relacionados */
+#product-form, #product-list {
+    margin-bottom: 2rem; /* Margen inferior de 2rem entre formularios y lista de productos */
+}
+
+form {
+    display: flex; /* Usa flexbox para organizar los elementos en columnas */
+    flex-direction: column; /* Dirección de los elementos como columna */
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    gap: 1rem; /* Espacio entre elementos de 1rem */
+    color: #333; /* Color del texto en el formulario */
+}
+
+form input, form button, form select {
+    padding: 0.5rem; /* Relleno interno de 0.5rem en campos de entrada y botones */
+    font-size: 1rem; /* Tamaño de fuente de 1rem */
+    color: #333; /* Color del texto en campos de entrada y botones */
+}
+
+/* Estilos de la lista de productos */
+.product-list {
+    display: flex; /* Usa flexbox para organizar los productos */
+    flex-wrap: wrap; /* Envuelve los productos cuando no hay suficiente espacio */
+    gap: 1rem; /* Espacio entre productos de 1rem */
+}
+
+.product-item {
+    background-color: white; /* Color de fondo de cada artículo de producto */
+    border: 1px solid #ccc; /* Borde delgado de 1px sólido con color #ccc */
+    padding: 1rem; /* Relleno interno de 1rem en elementos de producto */
+    width: calc(33.333% - 2rem); /* Ancho calculado para ocupar un tercio del contenedor */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
+}
+
+.product-item img {
+    max-width: 100%; /* Ancho máximo de la imagen del producto */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Estilos del enlace de WhatsApp */
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px; /* Ajusta la posición según tu preferencia */
+    right: 20px; /* Ajusta la posición según tu preferencia */
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.whatsapp-link i {
+    font-size: 1.5rem;
+}
+
+.whatsapp-link:hover {
+    background-color: #128C7E;
+}
